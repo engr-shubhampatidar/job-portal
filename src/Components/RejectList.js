@@ -6,19 +6,17 @@ export default function RejectList() {
   console.log(list);
 
   return (
-    <div>
-      <div>
+    <div className="container">      
         <h1>Rejectlist</h1>
-        {list.map((e) => {
+        {list ? (list.map((e) => {
           return (
-            <div>
+            <div className="card">
               <p>{e.id}</p>
               <p>{e.name}</p>
               <img src={`${e.image}`} alt={`${e.name}`} />
             </div>
           );
-        })}
+        })) : <l1>No One</l1>}
       </div>
-    </div>
   );
 }

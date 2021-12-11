@@ -6,11 +6,11 @@ export default function ShortList() {
   console.log(list);
 
   return (
-    <div>
+    <div className="container">
       <h1>ShortList</h1>
-      {list.map((e) => {
+      {list && list.map((e) => {
         return (
-          <div>
+          <div className="card">
             <p>{e.id}</p>
             <p>{e.name}</p>
             <img src={`${e.image}`} alt={`${e.name}`} />

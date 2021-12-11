@@ -58,36 +58,6 @@ function Candidates() {
                 {candidate.name}
               </p>
             </div>
-
-            {/* <button
-              onClick={() => {
-                alert("i am clicked shortlist");
-
-                dispatch(
-                  addToShortList({
-                    id: candidate.id,
-                    name: candidate.name,
-                    image: candidate.Image,
-                  })
-                );
-              }}
-            >
-              ShortList
-            </button>
-            <button
-              onClick={() => {
-                alert("i am clicked rejected");
-                dispatch(
-                  addToRejectList({
-                    id: candidate.id,
-                    name: candidate.name,
-                    image: candidate.Image,
-                  })
-                );
-              }}
-            >
-              RejectList
-            </button> */}
           </div>
         );
       })}
